@@ -11,7 +11,7 @@ const Navbar = ({ themeToggle, handleThemeToggle }) => {
         <a href="/create" className="px-2">
           <button className="p-1 w-10 h-10 rounded-md transition-all duration-300 ease-in-out hover:scale-125">
 
-            <svg viewBox="-1 -1 25 25" className={`transition-all duration-700 ease-in-out ${themeToggle ? "fill-dark" : "fill-white"}`} >
+            <svg viewBox="-1 -1 25 25" className={`transition-all duration-700 ease-in-out ${themeToggle ? "fill-dark" : "fill-light"}`} >
               <path d="M12 4C12.5523 4 13 4.44772 13 5V11H19C19.5523 11 20 11.4477 20 12C20 12.5523 19.5523 13 19 13H13V19C13 19.5523 12.5523 20 12 20C11.4477 20 11 19.5523 11 19V13H5C4.44772 13 4 12.5523 4 12C4 11.4477 4.44772 11 5 11H11V5C11 4.44772 11.4477 4 12 4Z" />
             </svg>
 

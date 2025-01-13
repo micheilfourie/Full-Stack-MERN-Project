@@ -20,7 +20,7 @@ function App() {
   }, [themeToggle]);
 
   return (
-    <div className={`min-h-screen flex flex-col items-center transition-color duration-700 ease-in-out ${themeToggle ? "bg-light text-dark" : "bg-dark text-white"}`}>
+    <div className={`min-h-screen flex flex-col items-center transition-colors duration-700  ease-in-out ${themeToggle ? "bg-light text-dark" : "bg-dark text-light"}`}>
       <Navbar themeToggle={themeToggle} handleThemeToggle={handleThemeToggle} />
       <Routes>
         <Route path="/" element={<HomePage />} />
