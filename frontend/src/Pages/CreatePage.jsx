@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { useProductStore } from "../Store/product";
 
 const CreatePage = () => {
 
@@ -8,8 +9,14 @@ const CreatePage = () => {
     image: "",
   });
 
-  const handleAddProduct = () => {
-    console.log(newProduct);
+  const { createProduct } = useProductStore()
+
+  const handleAddProduct = async () => {
+    const { success, message } = await createProduct(newProduct);
+
+    console.log("Success:", success);
+    console.log("Message:", message);
+
     clearInput();
   }
 
